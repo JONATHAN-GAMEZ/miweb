@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera Web</title>
+    <script src="https://kit.fontawesome.com/cfd4dcdf38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="contenedor">
+        <header class="contenedor-header">
+            <a  href="index.html"><i class="fa-solid fa-bug" ></i></a>
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav class="contenedor-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Acerca de</a></li>
+                    <li><a href="index.html">Trabajos</a></li>
+                    <li><a href="index.html">Servicios</a></li>
+                    <li><a href="index.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Seccion principal-->
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2 class="titulo-acerca">Acerca de mi</h2>
+                    <p class="parrafo-acerca">Bienvenido a Dev Arkhan la pagina 
+                    donde sabras mas del desarrollador web Jonathan Gamez
+                    </p>
+                    <p class="parrafo2-acerca">
+                        en esta web encontraras a un desarrollador web muy dedicado 
+                    </p>
+                </div>
+                <div class="acerca-img">
+                    <img src="img/jonathan gamez .jpg" alt="img portada" id="portada">
+                </div>
+            </section>
+
+            <section class="seccion-2">
+                <img src="img/shibuya.jpeg" alt="tokio">
+            </section>
+            <!-- seccion con 3 subdiviciones-->
+            <section class="seccion-3">
+                <h2>Series anime favoritas</h2>
+                <div class="diviciones">
+                    <div class="div">
+                        <img src="img/kimetsu.jpeg" alt="kimetsu">
+                        <h3>kimetsu no yaiba</h3>
+                        <p>
+                            Ambientada en la era Taisho, la historia se centra en un joven llamado Tanjiro Kamado; un joven inteligente y de buen corazón que vive con su familia en las montañas, el cual se ha convertido en la única fuente de ingresos de su familia tras el fallecimiento de su padre, haciendo viajes al pueblo cercano para vender carbón. 
+                        </p>
+                        <a href="https://es.wikipedia.org/wiki/Kimetsu_no_Yaiba" class="a">
+                            <button>
+                                leer más
+                            </button>
+                        </a>
+                    </div>
+                    <div class="div">
+                        <img src="img/jujutsu.jpeg" alt="jujutsu">
+                        <h3>jujutsu kaisen </h3>
+                        <p>
+                            Yūji Itadori es un estudiante de secundaria que vive en Sendai con su abuelo. Se une al Club de Investigación de lo Oculto, a pesar de poseer un talento innato para el deporte. Va a visitar a su abuelo moribundo al hospital todos los días.
+                        </p>
+                        <a href="https://es.wikipedia.org/wiki/Jujutsu_Kaisen" class="a">
+                            <button>
+                                leer más
+                            </button>
+                        </a>
+                    </div>
+                    <div class="div">
+                        <img src="img/fullmetal.png" alt="fullmetal">
+                        <h3>fullmetal alchemist</h3>
+                        <p>
+                            La historia se centra en los hermanos Edward y Alphonse Elric, quienes viven en un pequeño pueblo de un país ficticio llamado Amestris.9​ Su padre, Hohenheim, se había marchado de su casa cuando aún eran pequeños y años más tarde su madre, Trisha Elric, muere por una enfermedad terminal, dejando a los hermanos Elric solos. 
+                        </p>
+                        <a href="https://es.wikipedia.org/wiki/Fullmetal_Alchemist" class="a">
+                            <button> leer más </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="header-formulario">
+                <h1>CONTACTO</h1>
+                <p> ¡Esperamos tu consulta!</p>
+                <form action="" method="get" class="formulario" id="form">
+                    <div class="form-row">
+                        <label for="nombre"> Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-row">
+                        <label for="email"> Email</label>
+                        <input type="email" name="email" id="email" placeholder="usuario@correo.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje"> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" ></textarea>
+                    </div>
+                    <div class="form-row">
+                        <!-- <button> Enviar</button> -->
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <p class="alerta" id="alerta"></p>
+                </form>
+            </section> 
+        </main>
+        <footer class="contenedor-footer">
+            <h3>Derechos de autor reservados</h3>
+            <nav class="contenedor-links">
+                <ul>
+                    <li class="linkedin">
+                        <a  href="https://www.linkedin.com/in/jonathan-gamez-261255226/" target="_blank" style="color: blue;">
+                            <i class="fab fa-linkedin" ></i>
+                            <span class="social-name"> </span>
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://www.instagram.com/arkhandev/" target="_blank" style="color: aliceblue;">
+                            <i class="fab fa-instagram" ></i>
+                            <span class="social-name" ></span>
+                        </a>
+                    </li>
+                    <li class="whatsapp">
+                        <a href="https://wa.me/qr/XBLCQYS4UFTRM1 " target="_blank" style="color: aliceblue;">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="social-name" > </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

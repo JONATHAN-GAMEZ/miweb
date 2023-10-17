@@ -1,0 +1,359 @@
+/* Elementos que influyen en todo*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*Barra de navegacion*/
+.contenedor-header{
+    display: flex;
+    background-color: lightcoral;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 35px 20px;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: aliceblue;
+    float: right;
+    /*line-height: 80px;*/
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.contenedor-header a i {
+    color: aliceblue;
+    font-size: 40px;
+}
+.contenedor-menu ul{
+    display: flex;
+    gap: 1.1em;
+}
+.contenedor-menu ul li a{
+    color: aliceblue;
+    font-size: 16px;
+}
+
+/*seccion principal*/
+/*seccion 1*/
+.seccion-1{
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 2em;
+}
+.acerca-de{
+    /*background-color: lightblue;*/
+    padding: 1em;
+    width: 30vw;
+}
+.acerca-de h2{
+    text-align: right;
+    margin-top: 0;
+}
+.acerca-de p{
+    text-align: right;
+    text-wrap:wrap;
+    margin: 0.5em;
+    
+}
+.acerca-img img{
+    /*background-color: lightskyblue;*/
+    border-radius: 35px;
+    width: 50%;
+    border: 1px solid black;
+}
+/* seccion 2*/
+.seccion-2{
+    background-color: lightgray;
+    margin: 1px;
+}
+.seccion-2 img{
+    width: 100%;
+}
+/*seccion 3*/
+.seccion-3{
+    background-color:lightgreen;
+    padding: 5px;
+}
+.seccion-3 h2{
+    text-align: center;
+    margin: 0;
+}
+.diviciones{
+    background-color: aquamarine;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.diviciones div{
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    width: 66vh;
+    justify-content: center;
+    
+}
+.diviciones .div  h3,p, .a{
+    width: 100%;
+}
+.div h3{
+    font-size: 24px;
+    text-align: center;
+    margin: 5px 0 ;
+}
+.div p{
+    margin: 5px 0;
+}
+.div img{
+    border-radius: 20px;
+    width:300px;
+    height: 200px;
+}
+.div .a button{
+    text-decoration: none;
+    border: 0;
+    color: orangered;
+}
+/*formulario*/
+.header-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(250, 236, 236);
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 40px;
+    
+}
+.header-formulario h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.header-formulario p{
+    font-size: 18px;
+    margin-top: 0;
+    font-family: cursive;
+}
+.formulario{
+    background-color: rgb(250, 236, 236);
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+.form-row{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-row input[type = "text"], input[type = "email"]{
+    background-color: rgb(250, 250, 250);
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+}
+.form-row label{
+    margin-bottom: 3px;
+    text-align: initial;
+}
+.form-row textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(250, 250, 250);
+    border: 0;
+    border-radius: 8px;
+    min-height: 200px;
+    margin-bottom: 8px;
+    padding: 5px;
+    resize: none;
+    width: 100%;
+    
+}
+/*boton con button*/
+/* .form-row button{
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form-row button:hover{
+    background-color: lightskyblue;
+}
+.form-row button:active{
+    background-color: lightseagreen;
+} */
+/* boton con input*/
+.form-row input[type = "submit"]{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(127, 170, 226);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    /* width: 50%; */
+}
+.form-row input[type = "submit"]:hover{
+    background-color: rgb(42, 158, 230);
+}
+.form-row input[type = "submit"]:active{
+    background-color:royalblue;
+}
+.alerta{
+    color: orangered;
+    font-size: 20px;
+    font-family: cursive;
+}
+/*footer*/
+.contenedor-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 15px;
+}
+.contenedor-footer h3{
+    color: aliceblue;
+    margin: 0;
+}
+.contenedor-links ul{
+    display: flex;
+    gap: 1.1em;
+}
+.linkedin a i{
+    font-size: 25px;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+.instagram a i{
+    font-size: 25px;
+    background-image: linear-gradient(to top right, lightyellow,yellow, orange,darkorange,red,rgb(225, 48, 108),rgb(193, 53, 132), purple,blue,royalblue );
+    border-radius: 5px;
+}
+.whatsapp a i{
+    font-size: 25px;
+    background-color: green;
+    border-radius: 50px;
+}
+/*media query */
+@media (max-width: 768px) {
+    .contenedor-header{
+        background-color: coral;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .contenedor-header a i{
+        color: lightgreen;
+        /*font-size: 50px;*/
+    }
+    .acerca-de{
+        text-align: center;
+    }
+    .acerca-img{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .contenedor-header .contenedor-menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    } 
+    .contenedor-header .contenedor-menu ul li a{
+        font-size: 20px;
+    }
+    .contenedor-menu{
+        height: 0vh;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    .contenedor-menu ul{
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+    .contenedor-menu ul li a:hover{
+        color: #b59a61;
+    }
+    .contenedor-menu.active{
+        height: 100vh;
+    }
+    .contenedor-menu.active ul{
+        opacity: 1;
+    }
+    
+}
+/* media pantallas mas grandes de 700px*/
+@media only screen and (min-width: 700px){
+    .header-formulario{
+        padding: 50px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+      }
+      .form-row input[type = "email"]{
+        width: 250px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+          width: 250px;
+      }
+      .form-row input[type = "submit"]{
+        margin-left: 120px;
+      }
+}
