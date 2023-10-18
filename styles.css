@@ -235,6 +235,15 @@ a{
     font-size: 20px;
     font-family: cursive;
 }
+.greeting a{
+    display: flex;
+   position: fixed;
+   bottom: 80px;
+   right: 10px;
+   font-size: 50px;
+   color: red;
+
+}
 /*footer*/
 .contenedor-footer{
     display: flex;
