@@ -5,6 +5,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color:rgb(241, 241, 241) ;
+    
 }
 ol,ul{
     list-style: none;
@@ -12,6 +14,12 @@ ol,ul{
 a{
     text-decoration: none;
 }
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 /*Barra de navegacion*/
 .contenedor-header{
@@ -53,6 +61,7 @@ a{
     justify-content: right;
     align-items: center;
     padding: 2em;
+    min-height: 100%;
 }
 .acerca-de{
     /*background-color: lightblue;*/
@@ -85,7 +94,7 @@ a{
 }
 /*seccion 3*/
 .seccion-3{
-    background-color:lightgreen;
+    /* background-color:lightgreen; */
     padding: 5px;
 }
 .seccion-3 h2{
@@ -93,7 +102,7 @@ a{
     margin: 0;
 }
 .diviciones{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -102,14 +111,14 @@ a{
 .diviciones div{
     background-color: lightgray;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
     /*flex-direction: column;*/
     width: 66vh;
     justify-content: center;
-    
+    border-radius: 15px;
 }
 .diviciones .div  h3,p, .a{
     width: 100%;
@@ -132,6 +141,67 @@ a{
     border: 0;
     color: orangered;
 }
+/* pagina servicios*/
+.servicios{
+    padding: 6px;
+    min-height: 100vh;
+    text-align: left;
+}
+.servicios > h1{
+    color: #d00000;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding-left: 60px;
+}
+.contenedor-servicios{
+    /* border: 2px solid blue; */
+    padding: 6px;
+    min-height: 100vh;
+    display: flex;
+}
+.servicio1 {
+    border: 1px solid rgb(226, 243, 248);
+    border-radius: 6px;
+    padding: 6px;
+    margin: 40px;
+    width: 45%; 
+    height: 45%;
+    background-color: rgb(226, 243, 248);
+    display: flex;
+}
+.servicio1 div > h2{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e85d04;
+}
+.servicio1 div > p{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.servicio2{
+    border: 2px solid rgb(252, 230, 221)n;
+    border-radius: 10px;
+    background-color: rgb(252, 230, 221);
+    padding: 6px;
+    margin: 40px;
+    width: 45%;
+    height: 45%;
+}
+.servicio2 > h2{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e85d04;
+}
+.servicio2 > p{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.servicio1 > img {
+    border-radius: 25px;
+    width: 50%;
+} 
 /*formulario*/
 .header-formulario{
     display: flex;
@@ -252,6 +322,7 @@ a{
     background-color: lightcoral;
     padding: 10px;
     border-radius: 15px;
+    margin-top: auto;
 }
 .contenedor-footer h3{
     color: aliceblue;
